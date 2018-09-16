@@ -1,0 +1,46 @@
+{
+  "name": "async-redux-actions",
+  "version": "0.0.0-development",
+  "description": "generate async redux action types and creators",
+  "main": "dist/async-redux-actions.js",
+  "umd:main": "dist/async-redux-actions.umd.js",
+  "module": "dist/async-redux-actions.m.js",
+  "source": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": "http://github.com/vinspee/async-redux-actions",
+  "author": "Vince Speelman <v@vinspee.me>",
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle src/index.js",
+    "start": "microbundle watch src/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "devDependencies": {
+    "babel-preset-env": "1.7.0",
+    "babel-preset-stage-0": "6.24.1",
+    "commitizen": "2.10.1",
+    "coveralls": "3.0.2",
+    "cz-customizable": "5.2.0",
+    "jest": "23.6.0",
+    "microbundle": "0.6.0",
+    "redux-actions": "2.6.1",
+    "semantic-release": "^15.9.15",
+    "travis-deploy-once": "^5.0.7"
+  },
+  "peerDependencies": {
+    "redux-actions": ">=2.0.0"
+  },
+  "dependencies": {
+    "prettier": "1.14.2"
+  }
+}

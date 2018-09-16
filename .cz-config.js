@@ -9,10 +9,6 @@ module.exports = {
       name: 'fix:      A bug fix',
     },
     {
-      value: 'docs',
-      name: 'docs:     Documentation only changes',
-    },
-    {
       value: 'style',
       name:
         'style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)',
@@ -45,11 +41,12 @@ module.exports = {
     },
   ],
   scopes: [
+    { name: 'build' },
     { name: 'config' },
     { name: 'creators' },
-    { name: 'types' },
     { name: 'dependencies' },
-    { name: 'build' },
+    { name: 'docs' },
+    { name: 'types' },
   ],
   allowCustomScopes: true,
   footerPrefix: 'closes ',

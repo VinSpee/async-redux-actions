@@ -10,7 +10,10 @@
   "files": [
     "dist"
   ],
-  "repository": "http://github.com/vinspee/async-redux-actions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinSpee/async-redux-actions.git"
+  },
   "author": "Vince Speelman <v@vinspee.me>",
   "license": "MIT",
   "scripts": {
@@ -18,6 +21,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "semantic-release": "semantic-release",
+    "prepublishOnly": "yarn build",
     "travis-deploy-once": "travis-deploy-once"
   },
   "config": {

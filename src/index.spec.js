@@ -2,7 +2,7 @@ import ca from './';
 
 const DEFAULT_MOCK = ca()()({
   PROFILE: new Promise(res => res('profile')),
-  REGISTRATION: new Promise(res => res('registered')),
+  REGISTRATION: login => new Promise(res => res('registered', login)),
   EXPLORE_STATUS: () => 'status',
   FOO: undefined,
 });

@@ -1,13 +1,7 @@
 import { createActions as act } from 'redux-actions';
 
 const STATES = ['REQUESTED', 'RECEIVED', 'REJECTED'];
-const isPromise = value => {
-  let test = value;
-  if (typeof value === 'function') {
-    test = value();
-  }
-  return Promise.resolve(test) === test;
-};
+const isPromise = value => Promise.resolve(value) === value;
 
 const createActions = (
   { states = STATES, prefix = '' } = {
@@ -20,8 +14,7 @@ const createActions = (
       (acc, [k, v]) => ({
         ...acc,
         [k]: isPromise(v) ? () => v : v,
-        ...(v &&
-          isPromise(v) &&
+        ...(((v && isPromise(v)) || typeof v === 'function') &&
           states.reduce(
             (acc, curr) => ({
               ...acc,

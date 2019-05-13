@@ -8,7 +8,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?longCache=true&style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?longCache=true&style=flat-square)](https://conventionalcommits.org)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?longCache=true&style=flat-square)](https://github.com/prettier/prettier)
-[![license](https://img.shields.io/github/license/VinSpee/async-redux-action-creators.svg?longCache=true&style=flat-square)](https://github.com/VinSpee/async-redux-actions/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/VinSpee/async-redux-action-creators.svg?longCache=true&style=flat-square)](https://github.com/VinSpee/async-redux-actions/blob/master/LICENSE) [![Greenkeeper badge](https://badges.greenkeeper.io/VinSpee/async-redux-actions.svg)](https://greenkeeper.io/)
 
 ```
 ({
